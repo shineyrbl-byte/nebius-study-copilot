@@ -113,4 +113,3 @@ openshell sandbox upload my-assistant examples/syllabus-notes.txt /sandbox/.open
 ## License
 
 MIT. See [LICENSE](LICENSE).
-# nebius-study-copilot
