@@ -1,0 +1,4 @@
+Data Structures - course notes
+Assignment 2 is due November 12. Submit through the course portal.
+The midterm exam is on November 20 and covers chapters 1 to 7.
+Office hours are Tuesdays at 3pm. Read chapters 5 to 7 before next class.
