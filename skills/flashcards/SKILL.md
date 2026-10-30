@@ -27,6 +27,8 @@ Scores live in /sandbox/.openclaw/workspace/flashcards/scores.md
    Say "quiz me" to start.
 
 ## Quizzing (one card at a time)
+"Quiz me on <name>" means: start a quiz from the EXISTING deck flashcards/<name>.md.
+Do not make a new deck if that file exists. Only make a deck when the user says "make flashcards".
 1. If several decks exist and the user did not name one, list them and ask which.
 2. Ask ONE question, then stop and wait for the answer. Do not show the answer first.
 3. After each answer, follow "After EVERY quiz answer" at the top.

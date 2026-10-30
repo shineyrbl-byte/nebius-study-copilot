@@ -23,8 +23,9 @@ Add the apply-by date to your deadline tracker? (yes/no)
 4. Reply with the template above.
 
 ## If the user answers yes
-Append to /sandbox/.openclaw/workspace/deadlines.md:
-YYYY-MM-DD | job | apply: <company> <role> | open
+Append to /sandbox/.openclaw/workspace/deadlines.md (the date is the APPLY-BY date, not today):
+<apply-by YYYY-MM-DD> | job | apply: <company> <role> | open
+Then reply: "Added: <that exact line>".
 
 ## Updating status
 Status is one of: saved, applied, interview, offer, rejected.
