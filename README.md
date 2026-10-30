@@ -27,7 +27,7 @@ Demo flow: drop a syllabus into the inbox -> the assistant extracts action items
 
 ## Demo
 
-- **Video (under 3 min):** _add YouTube link here_
+- **Video (under 3 min):** https://youtu.be/AaatNjP7n3k
 - **Demo:** this assistant runs privately on your own machine, so there is no shared
   hosted URL. The video shows the full flow, and the setup steps below reproduce it.
 
