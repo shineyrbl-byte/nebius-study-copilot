@@ -20,6 +20,12 @@ Built for the Nebius x NVIDIA Global AI Hackathon.
 Demo flow: drop a syllabus into the inbox -> the assistant extracts action items
 -> you approve -> deadlines land in the tracker -> the morning brief uses them.
 
+## Demo
+
+- **Video (under 3 min):** _add YouTube link here_
+- **Demo:** this assistant runs privately on your own machine, so there is no shared
+  hosted URL. The video shows the full flow, and the setup steps below reproduce it.
+
 ## How it uses NVIDIA and Nebius
 
 - **Model:** NVIDIA Nemotron 3 Super (`nvidia/nemotron-3-super-120b-a12b`)
@@ -103,6 +109,18 @@ openshell sandbox upload my-assistant examples/syllabus-notes.txt /sandbox/.open
 - Models are unreliable at date math, so `bin/brief-data.sh` computes dates and the model only
   formats the result.
 - On Colima, the OpenShell gateway needs the `/var/run/docker.sock` link.
+
+## Feedback on Nebius and NVIDIA tools
+
+- **Nebius Token Factory:** the OpenAI-compatible endpoint made setup easy. NemoClaw's
+  "Other OpenAI-compatible endpoint" option worked with just a base URL, model name, and key.
+  No GPU setup was needed on an 8 GB laptop.
+- **Nemotron 3 Super:** follows skill instructions well when the reply template comes
+  first. It is less reliable at date math, so a helper script computes dates.
+- **NemoClaw / OpenShell:** the sandbox gives real file and network limits, which suits a
+  private assistant. Rough edges: on Colima the gateway expects `/var/run/docker.sock`,
+  which is not created by default. Uploading folders sometimes nested them unexpectedly.
+  Clearer errors for both would help.
 
 ## Limitations
 
