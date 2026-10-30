@@ -1,9 +1,10 @@
 #!/bin/bash
 # Computes today's date (India time) and days remaining for each open deadline,
 # so the model never has to do date math.
-TODAY=$(TZ=Asia/Kolkata date +%Y-%m-%d)
+# Env overrides: DEADLINES_FILE, BRIEF_TZ.
+TODAY=$(TZ="${BRIEF_TZ:-Asia/Kolkata}" date +%Y-%m-%d)
 echo "TODAY: $TODAY"
-F=/sandbox/.openclaw/workspace/deadlines.md
+F="${DEADLINES_FILE:-/sandbox/.openclaw/workspace/deadlines.md}"
 if [ ! -s "$F" ]; then echo "NO_DEADLINES"; exit 0; fi
 today_s=$(date -d "$TODAY" +%s)
 sort "$F" | while IFS='|' read -r d kind title status; do
